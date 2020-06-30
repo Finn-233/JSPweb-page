@@ -1,0 +1,60 @@
+body {
+    padding: 0px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse; /*边框折叠*/
+}
+
+td, th {
+    height: 40px;
+    padding: 5px;
+    border: none;
+    text-align: center;
+}
+
+.tr_header {
+    background: #4488BB;
+!important;
+    color: #FFF;
+!important;
+    font-size: small;
+}
+
+.table_border td, th {
+    border: 1px solid #DDE;
+}
+
+.table_padding10 td, th {
+    padding: 10px;
+}
+
+.table_border_bg tr:nth-child(odd) {
+    background: #FFF;
+}
+
+.table_border_bg tr:nth-child(even) {
+    background: #F6F6F6;
+}
+
+.table_hover tr:hover {
+    background: #FDC;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.msg {
+    font-size: small;
+    color: red;
+}

@@ -1,0 +1,219 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.team .item {
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.team .item:hover .info {
+    bottom: 50px;
+}
+
+.team .item:hover .team-img:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team .item .team-img {
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+}
+
+.team .item .team-img:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to top, #111, rgba(0, 0, 0, 0.4));
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.team .item .info {
+    position: absolute;
+    bottom: -500px;
+    left: 0;
+    padding: 0 15px;
+    width: 100%;
+    z-index: 4;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.team .item .info h6 {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.team .item .info span {
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #EE3158;
+}
+
+.team .item .info p {
+    margin-bottom: 10px;
+    color: #a9a9a9;
+}
+
+.team .item .info .icon {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.pink {
+    color: deeppink;
+    font-weight: bold;
+}
+
+
+.masonry {
+    column-count: 3;
+    column-gap: 0;
+}
+
+.item2 {
+    padding: 2px;
+    position: relative;
+    counter-increment: item-counter;
+}
+
+.item2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.item2::after {
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background-color: #000;
+    color: #fff;
+    content: counter(item-counter);
+}
+
+
+.search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    zoom: 1;
+}
+
+.sear {
+    height: 30px;
+    width: 300px;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.bu {
+    width: 100px;
+    padding: 10px 15px;
+    color: #fff;
+    background: linear-gradient(120deg, rgba(235, 0, 255, 0.9), #0af, #ee88aa); /*背景设置渐变*/
+    background-size: 200%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /*隐藏设置 */
+}
+
+.bu:hover {
+    background-position: right;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+th {
+    text-align: center;
+    color: white;
+    border: white solid 1px
+}
+
+.in {
+    background-color: rgba(230, 225, 255, 0.5);
+    color: white;
+    text-align: center;
+}
+
+span {
+    color: white;
+}
+
+.headphoto {
+    margin-left: 67%;
+    margin-top: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+.message {
+    visibility: hidden;
+    margin-left: -25px;
+    margin-top: -18px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(230, 225, 255, 0.5);
+    padding-top: 20px;
+}
+
+.photo {
+    border-radius: 50px;
+    width: 50px;
+}
+
+.headphoto:hover .message {
+    visibility: visible;
+}
+
+.headphoto:hover .photo {
+    border: white solid 1px;
+}
+
+.biaoge {
+    border: black solid 1px;
+}
+
+.foot a {
+    color: white;
+    font-size: 15px;
+}
